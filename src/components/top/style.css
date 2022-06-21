@@ -5,6 +5,7 @@
   width: 100%;
   height: 100%;
   border-radius: 5px;
+
 }
 .TopCate .nametop {
   position: relative;
@@ -13,8 +14,8 @@
 .TopCate .nametop span {
   background: #0f3460;
   color: #fff;
-  font-size: 12px;
-  padding: 5px 10px;
+  font-size: .8rem;
+  padding: 5px 5px;
   border-radius: 50px;
   margin: 5px;
   position: absolute;
@@ -22,10 +23,51 @@
 }
 .TopCate .nametop .tleft {
   left: 0;
+  
 }
 .TopCate .nametop .tright {
   background-color: aliceblue;
   color: black;
   position: absolute;
   right: 0;
+}
+.list-categories img{
+  width: 30px;
+  margin-right: 10px;
+}
+.list-categories{
+  margin-right: 10px;
+  background-color: lightblue;
+  padding: 5px;
+  width: 21vw;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  justify-content: center;
+  font-size: 1rem;
+  
+}
+.categories{
+  flex-wrap: wrap;
+  cursor: pointer;
+
+}
+
+@media (max-width:768px){
+  .tright{
+    display: none;
+  }
+  .tleft{
+    display: none;
+  }
+  .img img{
+    width: 4rem;
+  }
+  .list-categories{
+    font-size: .6rem;
+    align-items: center;
+  }
 }

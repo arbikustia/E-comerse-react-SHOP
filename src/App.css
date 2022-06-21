@@ -16,7 +16,7 @@ body {
   padding: 50px 0;
 }
 .container {
-  max-width: 90%;
+  max-width: 90vw;
   margin: auto;
 }
 .d_flex {
@@ -116,14 +116,15 @@ button {
   margin-top: 40px;
 }
 .heading i {
-  color: #e94560;
+  color: #FFCD4E;
   margin: 10px;
+  font-size: 1.8rem;
 }
 .discount {
   position: absolute;
   top: 0;
   left: 0;
-  background: #e94560;
+  background: #0D6EFD;
   padding: 3px 10px;
   font-size: 12px;
   border-radius: 50px;
@@ -139,6 +140,13 @@ button {
   box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
   margin: 10px;
 }
+
+.data-wraper{
+  background-color: orange;
+}
+.flash-sale-img{
+  width: 17vw;
+}
 .product h3 {
   font-weight: 400;
   font-size: 17px;
@@ -151,11 +159,12 @@ button {
 .product .price {
   display: flex;
   justify-content: space-between;
-  color: #e94560;
+  color: #0D6EFD;
+  font-family: 1rem;
 }
 .price button {
   background: none;
-  color: #e94560;
+  color: #0D6EFD;
   font-size: 20px;
   transition: 0.5s;
   border: 1px solid rgb(3 0 71 / 9%);
@@ -165,7 +174,7 @@ button {
 }
 .price button:hover {
   cursor: pointer;
-  background-color: #e94560;
+  background-color: #0D6EFD;
   color: #fff;
 }
 .product-like {
@@ -175,9 +184,10 @@ button {
   margin: 10px;
   opacity: 0;
   transition: 0.5s;
+  color: red;
 }
 .product-like label {
-  background-color: #0f3460;
+  background-color: red;
   padding: 1px 10px;
   font-size: 12px;
   color: white;
@@ -199,7 +209,7 @@ button {
   width: 50px;
   height: 50px;
   line-height: 60px;
-  background: #0f3460;
+  background: #0D6EFD;
   border-radius: 50%;
   transform: 0.5s;
   z-index: 5;
@@ -218,7 +228,7 @@ button {
 }
 .control-btn .prev:hover,
 .control-btn .next:hover {
-  background: #e94560;
+  background: lightblue;
   color: white;
   cursor: pointer;
 }
@@ -246,4 +256,23 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
+}
+
+
+@media (max-width:768px){
+  .product{
+    width: 100px;
+  }
+  .product h3{
+    font-size: 11px;
+  }
+  .product .rate i{
+    font-size: 6px;
+  }
+  .product .price{
+    font-size: .5rem;
+  }
+  .price h4{
+    font-size: .7rem;
+  }
 }

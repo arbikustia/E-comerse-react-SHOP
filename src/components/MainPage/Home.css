@@ -1,29 +1,23 @@
-.homeSlide h1 {
-  font-size: 45px;
-  line-height: 55px;
-  margin: 50px 0 20px 0;
+.slider-wraper{
+  margin-top: 20px;
+  width: 100vw;
+  height: 20vh;
 }
-.homeSlide p {
-  margin: 20px 0;
+.slide {
+  width: 100vw;
+  height: 50vh;
+
 }
-.homeSlide ul {
-  position: absolute;
-  bottom: 20px;
+.slide img{
+  width: 15rem;
+  text-align: center;
+  position: relative;
+  left: 40vw;
 }
-.homeSlide ul li {
-  border: 2px solid #b8b7b7;
-  border-radius: 50%;
-  padding: 10px;
-}
-.homeSlide ul li button {
-  background: transparent !important;
-  color: transparent !important;
-}
-.homeSlide ul li button::before {
-  font-size: 15px !important;
-  color: #0f3460;
-  position: absolute;
-  top: 2px;
-  left: 0;
-  margin: auto;
+
+
+@media (max-width:768px){
+  .slide img {
+    left: 13vw;
+  }
 }

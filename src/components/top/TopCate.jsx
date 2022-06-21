@@ -1,8 +1,12 @@
 import React from "react"
 import "./style.css"
 import TopCart from "./TopCart"
+import Categories from './Categories'
 
 const TopCate = () => {
+
+
+
   return (
     <>
       <section className='TopCate background'>
@@ -17,6 +21,17 @@ const TopCate = () => {
               <i className='fa-solid fa-caret-right'></i>
             </div>
           </div>
+          <div className="categories d-flex align-items-center ">
+            {Categories.map((item, index) => {
+              return (
+                <div className="list-categories d-flex " key={index}>
+                  <img src={item.cateImg} alt="" />
+                  <p>{item.cateName}</p>
+                </div>
+              )
+            })}
+          </div>
+
           <TopCart />
         </div>
       </section>

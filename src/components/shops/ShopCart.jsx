@@ -45,6 +45,7 @@
 //export default ShopCart
 
 import React, { useState } from "react"
+import {BsFillBagPlusFill} from 'react-icons/bs'
 
 const ShopCart = ({ shopItems, addToCart }) => {
   const [count, setCount] = useState(0)
@@ -56,7 +57,7 @@ const ShopCart = ({ shopItems, addToCart }) => {
     <>
       {shopItems.map((shopItems, index) => {
         return (
-          <div className='box'>
+          <div className='box '> 
             <div className='product mtop'>
               <div className='img'>
                 <span className='discount'>{shopItems.discount}% Off</span>
@@ -77,11 +78,8 @@ const ShopCart = ({ shopItems, addToCart }) => {
                 </div>
                 <div className='price'>
                   <h4>${shopItems.price}.00 </h4>
-                  {/* step : 3  
-                     if hami le button ma click garryo bahne 
-                    */}
                   <button onClick={() => addToCart(shopItems)}>
-                    <i className='fa fa-plus'></i>
+                    <i><BsFillBagPlusFill/></i>
                   </button>
                 </div>
               </div>

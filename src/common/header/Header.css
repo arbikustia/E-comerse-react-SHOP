@@ -1,54 +1,43 @@
-/*------head-----------*/
-.head {
-  background-color: #0f3460;
-  padding: 10px 0;
-  color: #fff;
-}
-.head i {
-  margin-right: 10px;
-}
-.head label {
-  margin-right: 30px;
-  font-size: 13px;
-}
-/*------head-----------*/
+
 /*------search-----------*/
 .search {
   padding: 20px 0;
+  background-color: lightblue;
 }
-.search .logo img {
-  width: auto;
-  height: auto;
+.name-brand{
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0D6EFD;
 }
 .search .width {
   width: 20%;
 }
 .search-box {
-  width: 80%;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  /*padding: 10px;*/
-  border-radius: 50px;
+  width: 60vw;
+  margin: 0 10px 0 10px;
+  border: 2px solid #0D6EFD;
+  border-radius: 5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -ms-border-radius:5px;
+  -o-border-radius:5px;
 }
 .search-box i {
   width: 5%;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.2rem;
   opacity: 0.5;
+  color: #0D6EFD;
   padding: 15px 20px;
   font-size: 17px;
 }
 .search-box input {
   width: 100%;
-  padding: 10px;
+  padding: 5px;
+  background-color: transparent;
 }
 ::placeholder {
   font-size: 15px;
-}
-.search-box span {
-  width: 20%;
-  opacity: 0.5;
-  border-left: 2px solid rgba(0, 0, 0, 0.1);
-  padding: 10px;
 }
 .cart {
   position: relative;
@@ -61,7 +50,7 @@
   height: 20px;
   border-radius: 50%;
   text-align: center;
-  background-color: #e94560;
+  background-color: #0D6EFD;
   font-size: 12px;
   color: #fff;
 }
@@ -69,28 +58,10 @@
   justify-content: end;
 }
 /*------search-----------*/
-.catgrories {
-  background-color: #f6f9fc;
-  padding: 0px 30px;
-  border-radius: 5px;
-  height: 6vh;
-  margin-top: 5px;
-}
-.catgrories span {
-  margin-right: 20px;
-  font-size: 30px;
-  margin-top: 10px;
-}
-.catgrories h4 {
-  font-weight: 500;
-  margin-top: 12px;
-}
-.catgrories h4 i {
-  margin-left: 10px;
-}
 header {
   height: 8vh;
   box-shadow: -1px 15px 17px -8px rgba(0, 0, 0, 0.1);
+  background-color: lightblue;
 }
 header ul {
   line-height: 8vh;
@@ -98,34 +69,78 @@ header ul {
 header ul li {
   margin-left: 30px;
 }
-header ul li a {
-  transition: 0.5s;
-  font-size: 15px;
-  font-weight: 400;
-}
-header ul li a:hover {
-  color: #ff014f;
-}
-
-.open {
-  display: none;
-}
 .search.active {
-  height: 12vh;
+  height: 15vh;
   position: fixed;
   top: 0;
   z-index: 1000;
   width: 100%;
-  background-color: #fff;
+  background-color: lightblue;
   box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
+.toggle-btn{
+  display: none;
+}
+.mobile-nav-wraper{
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 220px;
+  height: 100vh;
+  background-color: lightblue;
+  z-index: 989;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.header-nav-mobile{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+.nav-brand-mobile{
+  font-size: 2rem;
+  font-weight: 800;
+}
+.btn-nav-close{
+  background-color: transparent;
+  font-size: 2rem;
+  text-align: center;
+}
+.nav-link-mobile{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.mobile-nav-wraper-active{
+  left: 0px;
+}
+
+
+
 
 @media (max-width: 768px) {
-  header ul {
-    padding-top: 30px;
+  .navbar-link{
+    display: none;
   }
-  .nav-links-mobile {
+  .toggle-btn{
+    display: block;
+  }
+  .profile{
+    display: none;
+  }
+  .name-brand{
+    display: none;
+  }
+  .header{
+    display: none;
+  }
+  /* header ul {
+    padding-top: 30px;
+  } */
+  /* .nav-links-mobile {
     position: absolute;
     display: block;
     list-style: none;
@@ -137,17 +152,17 @@ header ul li a:hover {
     height: 100vh;
     background-color: white;
     z-index: 888;
-  }
-  header ul li {
+  } */
+  /* header ul li {
     width: 100%;
     transition: all 0.5s ease-in-out;
     text-transform: uppercase;
     line-height: 70px;
-  }
-  header .link {
+  } */
+  /* header .link {
     display: none;
-  }
-  .close,
+  } */
+  /* .close,
   .open {
     position: absolute;
     top: 35px;
@@ -168,8 +183,8 @@ header ul li a:hover {
     width: 60px;
     height: 60px;
     line-height: 60px;
-  }
-  .header.active {
+  } */
+  /* .header.active {
     height: 10vh;
-  }
+  } */
 }

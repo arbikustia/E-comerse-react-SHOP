@@ -1,6 +1,7 @@
 import React from "react"
-import logo from "../../components/assets/images/logo.svg"
 import { Link } from "react-router-dom"
+import NavMobile from "./NavMobile"
+import {BsFillBagFill} from 'react-icons/bs'
 
 const Search = ({ CartItem }) => {
   // fixed Header
@@ -12,22 +13,22 @@ const Search = ({ CartItem }) => {
   return (
     <>
       <section className='search'>
-        <div className='container c_flex'>
+        <div className='container f_flex'>
+          <NavMobile />
           <div className='logo width '>
-            <img src={logo} alt='' />
+            <span className="name-brand">SHOP</span>
           </div>
 
           <div className='search-box f_flex'>
             <i className='fa fa-search'></i>
-            <input type='text' placeholder='Search and hit enter...' />
-            <span>All Category</span>
+            <input type='text' placeholder='Search....' />
           </div>
 
           <div className='icon f_flex width'>
-            <i className='fa fa-user icon-circle'></i>
+            <i className='fa fa-user profile icon-circle'></i>
             <div className='cart'>
               <Link to='/cart'>
-                <i className='fa fa-shopping-bag icon-circle'></i>
+                <i className='fa-solid fa-bag-shopping fs-5 icon-circle text-dark'></i>
                 <span>{CartItem.length === 0 ? "" : CartItem.length}</span>
               </Link>
             </div>
